@@ -13,8 +13,11 @@ module Files =
         let l_exts = List.map (fun (x:string) -> x.ToLower()) exts
         
         dir.EnumerateFiles()
-        |> Seq.filter (fun f -> f.Extension.Length > 1)
-        |> Seq.filter (fun f -> List.contains (f.Extension.Substring(1).ToLower()) l_exts)
+        |> Seq.filter (fun f -> 
+            match f.Extension.Length with
+            | 0 -> false
+            | _ -> List.contains (f.Extension.Substring(1).ToLower()) l_exts
+        )
         |> Seq.map (fun f -> f.FullName)
 
     let mapByLine path mapFunc =
