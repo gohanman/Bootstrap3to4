@@ -6,7 +6,7 @@ Run `.paket/paket.bootstrapper.exe` to install Paket then
 run `.paket/paket.exe install` to get dependencies
 
 ## Build
-Run `packages/FAKE/tools/FAKE.exe build.fsx`
+Run `packages/FAKE/tools/FAKE.exe`
 
 ## Why
 Couldn't you just use find+xargs+sed to do the same things?
