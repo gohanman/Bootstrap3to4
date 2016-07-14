@@ -2,8 +2,8 @@
 CLI tool to migrate files from Bootstrap 3 to 4
 
 ## Build PreReqs
-Run .paket/paket.bootstrapper.exe to install Paket then
-run .paket/paket.exe install to get dependencies
+Run `.paket/paket.bootstrapper.exe` to install Paket then
+run `.paket/paket.exe install` to get dependencies
 
 ## Build
 Run `packages/FAKE/tools/FAKE.exe build.fsx`
