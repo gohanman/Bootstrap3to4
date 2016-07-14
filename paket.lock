@@ -1,0 +1,4 @@
+NUGET
+  remote: https://www.nuget.org/api/v2
+    FAKE (4.30.2)
+    Mono.Options (4.4)
