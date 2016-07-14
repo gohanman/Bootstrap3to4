@@ -12,10 +12,10 @@ Target "Default" (fun _ ->
     let refs = ["packages/Mono.Options/lib/net4-client/Mono.Options.dll"]
 
     let sources = [
-        "CliTypes.fs"
-        "CssRenames.fs"
-        "Files.fs"
-        "Bootstrap3to4.fs" 
+        "src/CliTypes.fs"
+        "src/CssRenames.fs"
+        "src/Files.fs"
+        "src/Bootstrap3to4.fs" 
     ]
 
     sources
