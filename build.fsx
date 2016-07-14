@@ -11,7 +11,12 @@ Target "Default" (fun _ ->
 
     let refs = ["packages/Mono.Options/lib/net4-client/Mono.Options.dll"]
 
-    let sources = ["CliTypes.fs"; "Bootstrap3to4.fs" ]
+    let sources = [
+        "CliTypes.fs"
+        "CssRenames.fs"
+        "Files.fs"
+        "Bootstrap3to4.fs" 
+    ]
 
     sources
     |> Compile [Out "Bootstrap3to4.exe"; References refs; StaticLink "Mono.Options"]
